@@ -1,0 +1,16 @@
+GEM
+  specs:
+    httparty (0.15.6)
+      multi_xml (>= 0.5.2)
+    multi_xml (0.6.0)
+    oj (3.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  httparty
+  oj
+
+BUNDLED WITH
+   1.16.1
