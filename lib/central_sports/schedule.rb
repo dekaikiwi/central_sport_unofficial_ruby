@@ -30,13 +30,13 @@ class CentralSports::Schedule
 
   def schedule_item_data(schedule_item)
     {
-      name:     schedule_item['prognm'],
-      location: schedule_item['sisetnm'],
-      day_of_week_no: schedule_item['youbi'],
-      start_time:     schedule_item['sttime'],
-      end_time:       schedule_item['totime'],
-      is_school:      schedule_item['school'],
-      has_cost:       schedule_item['yuryokb'],
+      name:             schedule_item['prognm'],
+      location:         schedule_item['sisetnm'],
+      day_of_week_no:   schedule_item['youbi'],
+      start_time:       schedule_item['sttime'],
+      end_time:         schedule_item['totime'],
+      is_school:        schedule_item['school'],
+      has_cost:         schedule_item['yuryokb'],
       requires_booking: schedule_item['yoyakb'],
       is_for_kids:      schedule_item['kids_flag'],
       instructor_name:  schedule_item['instnm'],
