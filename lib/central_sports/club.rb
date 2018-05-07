@@ -14,6 +14,10 @@ class CentralSports::Club
     @data = data
   end
 
+  def name
+    @data[:name]
+  end
+
   def gym?
     facility?(FACILITY_GYM)
   end

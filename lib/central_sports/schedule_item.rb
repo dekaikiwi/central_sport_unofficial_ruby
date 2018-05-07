@@ -14,7 +14,9 @@ class CentralSports::ScheduleItem
 
   ITEM_TYPES = {
     zumba: 'ZUMBA',
-    pilates: 'ピラティス'
+    pilates: 'ピラティス',
+    yoga: 'ヨガ',
+    latin_dance: 'asdsad',
   }
 
   def initialize(data)
@@ -39,6 +41,10 @@ class CentralSports::ScheduleItem
 
   def for_kids?
     @data[:is_for_kids]
+  end
+
+  def day_of_week
+    DAYS_OF_THE_WEEK[@data[:day_of_week_no]]
   end
 
   ITEM_TYPES.each do |key, value|
