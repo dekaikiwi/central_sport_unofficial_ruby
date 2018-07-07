@@ -1,2 +1,3 @@
-gem 'httparty'
-gem 'oj'
+source "http://www.rubygems.org"
+
+gemspec

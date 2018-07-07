@@ -14,4 +14,5 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.add_dependency 'httparty', '~> 0.15.6'
   s.add_dependency 'oj', '~> 3.4', '>= 3.4.0'
+  s.add_development_dependency 'rake'
 end
