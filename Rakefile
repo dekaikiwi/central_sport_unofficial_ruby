@@ -30,7 +30,7 @@ task :update_clubs  do
   [*0..1000].each do |n|
     begin
       next if clubs.any? { |c| c[:id] == n }
-      c = CentralSports::Client.new(n)
+      c = CentralSports::Client.new(n).schedule
 
       club = {
         id: n,

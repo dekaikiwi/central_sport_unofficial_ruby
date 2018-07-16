@@ -10,11 +10,10 @@ class CentralSports::Client
         yyyymm:    date
       }
     }
-    schedule
   end
 
   def schedule
-    return @schedule unless @schedule.nil?
+    return @schedule if defined?(@schedule)
     response = self.class.get('/club/jsonp_schedule.php', @options)
     # The Central Sports API returns () brackets at each end of the response. These cause an error
     # when encoding the JSON to Hash so we want to remove them.

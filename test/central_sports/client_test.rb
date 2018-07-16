@@ -5,9 +5,10 @@ class CentralSportsClientTest < Minitest::Test
     assert ::CentralSports::Client
   end
 
-  def test_api_response
+  def test_schedule
     VCR.use_cassette('schedule') do
-      schedule = CentralSports::Client.new(145)
+      client = CentralSports::Client.new(145)
+      client.schedule
     end
   end
 end
