@@ -6,7 +6,7 @@ class CentralSportsClientTest < Minitest::Test
   end
 
   def test_schedule
-    VCR.use_cassette('schedule') do
+    VCR.use_cassette('schedule', record: :new_episodes) do
       client = CentralSports::Client.new(145)
       client.schedule
     end

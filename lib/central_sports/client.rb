@@ -2,7 +2,7 @@ class CentralSports::Client
   include HTTParty
   base_uri 'https://www.central.co.jp'
 
-  def initialize(club_id, date='201801')
+  def initialize(club_id, date=Time.now.strftime('%Y%m'))
     @options = {
       format: :plain,
       query: {
