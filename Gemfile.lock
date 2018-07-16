@@ -1,16 +1,41 @@
-GEM
+PATH
+  remote: .
   specs:
-    httparty (0.15.6)
+    central_sports (0.0.0)
+      httparty (~> 0.15.6)
+      oj (~> 3.4, >= 3.4.0)
+
+GEM
+  remote: http://www.rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    hashdiff (0.3.7)
+    httparty (0.15.7)
       multi_xml (>= 0.5.2)
+    minitest (5.11.3)
     multi_xml (0.6.0)
-    oj (3.4.0)
+    oj (3.6.3)
+    public_suffix (3.0.2)
+    rake (12.3.1)
+    safe_yaml (1.0.4)
+    vcr (4.0.0)
+    webmock (3.4.2)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  httparty
-  oj
+  central_sports!
+  minitest
+  rake
+  vcr
+  webmock
 
 BUNDLED WITH
-   1.16.1
+   1.16.2

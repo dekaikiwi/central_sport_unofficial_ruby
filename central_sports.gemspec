@@ -15,4 +15,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'httparty', '~> 0.15.6'
   s.add_dependency 'oj', '~> 3.4', '>= 3.4.0'
   s.add_development_dependency 'rake'
+  s.add_development_dependency "minitest"
+  s.add_development_dependency "vcr"
+  s.add_development_dependency "webmock"
 end

@@ -1,5 +1,3 @@
-require './lib/central_sports'
-
 class CentralSports::Club
 
   FACILITIES = [
