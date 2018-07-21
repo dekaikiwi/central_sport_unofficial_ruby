@@ -35,6 +35,10 @@ class CentralSports::ScheduleItem
     Time.strptime(time, '%H%M')
   end
 
+  def end_time
+    start_time + (@data[:duration].to_i * 60)
+  end
+
   ITEM_TYPES.each do |key, value|
     define_method :"type_#{key}?" do
       name.include? value

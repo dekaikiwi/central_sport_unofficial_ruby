@@ -32,7 +32,7 @@ class CentralSports::Schedule
       location:         schedule_item['sisetnm'],
       day_of_week_no:   schedule_item['youbi'],
       start_time:       schedule_item['sttime'],
-      end_time:         schedule_item['totime'],
+      duration:         schedule_item['totime'],
       is_school:        schedule_item['school'],
       has_cost:         schedule_item['yuryokb'],
       requires_booking: schedule_item['yoyakb'],
