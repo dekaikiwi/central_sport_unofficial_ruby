@@ -66,4 +66,66 @@ http_interactions:
         FAT BURN","school":"0","yuryokb":"0","yoyakb":"0","instcd":"999","instnm":"\u30a2\u30b7\u30b9\u30bf\u30f3\u30c8","instrnm":"-","level":"3","hmarknm":"\u2015","kids_flag":"0","color_cd":"ffcccc"}],"schedule_comment":null})
     http_version: 
   recorded_at: Mon, 16 Jul 2018 06:49:07 GMT
+- request:
+    method: get
+    uri: https://www.central.co.jp/club/jsonp_schedule.php?club_code=9999&yyyymm=201807
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 Jul 2018 06:53:16 GMT
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json
+      Server:
+      - Scutum
+    body:
+      encoding: UTF-8
+      string: ({"status":false})
+    http_version: 
+  recorded_at: Mon, 16 Jul 2018 06:54:56 GMT
+- request:
+    method: get
+    uri: https://www.central.co.jp/club/jsonp_schedule.php?club_code=99999&yyyymm=201807
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Jul 2018 16:02:16 GMT
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json
+      Server:
+      - Scutum
+    body:
+      encoding: UTF-8
+      string: ({"status":false})
+    http_version: 
+  recorded_at: Sat, 21 Jul 2018 16:04:01 GMT
 recorded_with: VCR 4.0.0
