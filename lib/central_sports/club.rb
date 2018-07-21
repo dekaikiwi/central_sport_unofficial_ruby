@@ -5,7 +5,8 @@ class CentralSports::Club
     FACILITY_STUDIO       = 'スタジオ',
     FACILITY_DIVING_POOL  = 'ダイビングプール',
     FACILITY_TENNIS_COURT = 'テニスコート',
-    FACILITY_GOLF_RANGE   = 'ゴルフレンジ'
+    FACILITY_GOLF_RANGE   = 'ゴルフレンジ',
+    FACILITY_POOL         = 'プール'
   ]
 
   def initialize(data)
@@ -24,6 +25,10 @@ class CentralSports::Club
     facility?(FACILITY_STUDIO)
   end
 
+  def pool?
+    facility?(FACILITY_POOL)
+  end
+
   def diving_pool?
     facility?(FACILITY_DIVING_POOL)
   end
@@ -33,7 +38,7 @@ class CentralSports::Club
   end
 
   def golf_range?
-    facility(FACILITY_GOLF_RANGE)
+    facility?(FACILITY_GOLF_RANGE)
   end
 
   def facility?(facility)
