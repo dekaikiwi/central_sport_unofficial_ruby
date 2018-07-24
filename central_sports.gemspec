@@ -1,5 +1,7 @@
 lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+$LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
+
+
 
 Gem::Specification.new do |s|
   s.name        = 'central_sports'
@@ -9,7 +11,6 @@ Gem::Specification.new do |s|
   s.description = "An unofficial wrapper for the schedule API for Central Sports"
   s.authors     = ["Jonathan Glassey"]
   s.email       = 'jonofilms@gmail.com'
-  s.require_paths = %w[lib]
   s.files       = Dir['lib/**/*.rb']
   s.license     = 'MIT'
   s.add_dependency 'httparty', '~> 0.15.6'
