@@ -26,7 +26,6 @@ class CentralSports::ScheduleItem
     @instructor_name = data[:instructor_name]
     @school = data[:is_school]
     @for_kids = data[:is_for_kids]
-    @day_of_week = DAYS_OF_THE_WEEK[@data[:day_of_week_no].to_i]
   end
 
   def start_time
@@ -37,6 +36,10 @@ class CentralSports::ScheduleItem
 
   def end_time
     start_time + (@data[:duration].to_i * 60)
+  end
+
+  def day_of_week
+    DAYS_OF_THE_WEEK[@data[:day_of_week_no].to_i - 1]
   end
 
   ITEM_TYPES.each do |key, value|
