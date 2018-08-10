@@ -12,7 +12,7 @@ class CentralSports::Schedule
   end
 
   ::CentralSports::ScheduleItem::ITEM_TYPES.each do |key, value|
-    define_method :"get_#{key}" do
+    define_method :"#{key}_classes" do
       items.select { |i| i.send :"type_#{key}?" }
     end
   end
