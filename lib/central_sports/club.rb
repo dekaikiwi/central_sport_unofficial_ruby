@@ -9,6 +9,8 @@ class CentralSports::Club
     FACILITY_POOL         = 'プール'
   ]
 
+  CLUBS = YAML.load(File.open('lib/data/clubs.yml'))
+
   def initialize(data)
     @data = data
   end
