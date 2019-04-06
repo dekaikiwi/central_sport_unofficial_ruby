@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.description = "An unofficial wrapper for the schedule API for Central Sports"
   s.authors     = ["Jonathan Glassey"]
   s.email       = 'jonofilms@gmail.com'
-  s.files       = Dir['lib/**/*.rb']
+  s.files       = Dir['lib/**/*.']
   s.license     = 'MIT'
   s.add_dependency 'httparty', '~> 0.15.6'
   s.add_dependency 'oj', '~> 3.4', '>= 3.4.0'
